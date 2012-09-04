@@ -1,0 +1,41 @@
+using System;
+
+using Android.App;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+
+namespace Apontador
+{
+	[Activity (Label = "Apontador", MainLauncher = true)]
+	public class ActivityMain : Activity
+	{
+		int count = 1;
+
+		protected override void OnCreate (Bundle bundle)
+		{
+			base.OnCreate (bundle);
+
+			// Set our view from the "main" layout resource
+//			SetContentView (Resource.Layout.Main);
+//
+//			// Get our button from the layout resource,
+//			// and attach an event to it
+//			Button button = FindViewById<Button> (Resource.Id.myButton);
+//			
+//			button.Click += delegate {
+//				button.Text = string.Format ("{0} clicks!", count++);
+//				StartActivity (typeof(Abastecimento));
+//				SetContentView (Resource.Layout.Abastecimento);
+//			};
+
+			SetContentView (Resource.Layout.Abastecimento);
+			StartActivity (typeof(Abastecimento));
+
+		}
+	}
+}
+
+
